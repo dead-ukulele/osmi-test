@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    
+    --color-primary: #337566;
+    --color-gray-light: #E8E8E8;
+    --color-gray-lighter: #F5F5F5;
+    --color-gray-border: #DBDBDB;
+    --color-gray-border-light: #CCCCCC;
+    --color-text-dark: #0F0F0F;
+    --color-error: #BD3223;
+    --color-bg-cream: #FFF7EB;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
